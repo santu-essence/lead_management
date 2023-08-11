@@ -5,7 +5,7 @@ module LeadManagement
 
       desc 'This will create initializer files for lead management'
       def create_initializer
-        create_file "config/initializer/lead_management.rb" <<~ RUBY
+        create_file "config/initializer/lead_management.rb"
       end
 
       desc 'This will create config file for lead management'
