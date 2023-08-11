@@ -5,12 +5,12 @@ module LeadManagement
 
       desc 'This will create initializer files for lead management'
       def create_initializer
-        create_file "config/initializer/lead_management.rb"
+        create_file "config/initializers/lead_management.rb"
       end
 
       desc 'This will create config file for lead management'
       def create_config
-        templates 'lead_management_config.rb', "#{Rails.root}/config/lead_management_config.rb"
+        template 'lead_management_config.rb', "#{Rails.root}/config/lead_management_config.rb"
       end
     end
   end
