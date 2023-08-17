@@ -1,0 +1,7 @@
+module LeadManagement
+  module Generators
+    class ControllerGenerator
+      @name: string
+    end
+  end
+end

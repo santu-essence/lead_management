@@ -1,3 +1,11 @@
 To copy a SimpleForm initializer to your Rails App, with some configuration values, just do:
 
     rails generate lead_management:install
+
+To create the controller into rails app:
+
+    rails generate lead_management:controller
+
+To create the model into rails app:
+
+    rails generate lead_management:model
