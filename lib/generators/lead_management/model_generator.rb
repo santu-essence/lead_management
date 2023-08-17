@@ -1,12 +1,9 @@
 module LeadManagement
   module Generators
     class ModelGenerator < Rails::Generators::NamedBase
+      source_root File.expand_path("../templates/models", __dir__)
       def create_model
-        create_file "#{Rails.root}/app/models/#{file_name}.rb", <<~RUBY
-          class #{file_name.capitalize} < ApplicationRecord
-            
-          end
-        RUBY
+        template "model.erb" "#{Rails.root}/app/models/#{file_name}.rb"
       end
     end
   end
