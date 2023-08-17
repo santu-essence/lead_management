@@ -2,7 +2,7 @@ module LeadManagement
   module Generators
     class ModelGenerator < Rails::Generators::NamedBase
       include Rails::Generators::Migration
-      include LeadHelpers
+      include LeadManagement::Generators::LeadHelpers
 
       argument :attributes, type: :array, default: [], banner: "field:type field:type"
       source_root File.expand_path("../templates/models", __dir__)
